@@ -1,0 +1,36 @@
+public class Samsung {
+    public static void main(String a[]){
+        Client ar = new Client();
+
+        ar.setName("Archit");
+        System.out.println("Username "+ar.name);
+
+        ar.setSalary(30000);
+        System.out.println("Salary "+ar.salary);
+
+        ar.setPassword("@peter01");
+        System.out.println("Pass "+ar.getPassword());
+    }
+}
+
+class Client{
+    public String name;
+    public int salary;
+    private String password;
+
+    String getPassword(){
+        return this.password;
+    }
+
+    void setName(String name){
+        this.name = name;
+    }
+
+    void setSalary(int sal){
+        salary = sal;
+    }
+
+    void setPassword(String pass){
+        password = pass;
+    }
+}
