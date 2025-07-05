@@ -1,0 +1,24 @@
+public class classAndObject {
+    public static void main(String[] args) {
+        BankAccount myAcc = new BankAccount();
+        myAcc.setUsername("@peter");
+        System.out.println(myAcc.username);
+        myAcc.setPassword("petermw21");
+//        System.out.println(myAcc.password);
+    }
+}
+ class BankAccount{
+//    Attribute
+ public String username;
+ private String password;
+
+// Function
+
+     public void setUsername(String user) {
+         this.username = user;
+     }
+
+     public void setPassword(String pass){
+         this.password = pass;
+     }
+}
